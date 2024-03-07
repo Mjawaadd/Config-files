@@ -2,7 +2,7 @@ build:
   version: "2.0"
 
 accounts:
-  message: " welcome to sssss  icic bank QA related API's"
+  message: "accounts  icic bank QA related API's"
   contactDetails:
     name: "QA- Lead"
     email: "qa@icici.com"
