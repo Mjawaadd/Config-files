@@ -2,7 +2,7 @@ build:
   version: "1.0"
      
 loans:
-  message: "This is icici bank micro services"
+  message: "Hey.....thi is  icici bank micro services"
   contactDetails:
     name: "Mohammed Jawaad"
     email: "mj@gmail.com"
