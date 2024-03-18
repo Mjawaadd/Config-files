@@ -2,7 +2,7 @@ build:
   version: "4.0"
      
 accounts:
-  message: "Welcome to icici bank dokcer micro services"
+  message: "Welcome to icici bank docker related micro services"
   contactDetails:
     name: "Mohammed Jawaad"
     email: "mohammedjawad@gmail.com"
