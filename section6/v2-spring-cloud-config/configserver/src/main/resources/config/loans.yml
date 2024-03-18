@@ -1,0 +1,11 @@
+build:
+  version: "1.0"
+     
+loans:
+  message: "Welcome to icici bank micro services"
+  contactDetails:
+    name: "Mohammed Jawaad"
+    email: "mj@gmail.com"
+  onCallSupport:
+    - 9916403863
+    - 8660028318

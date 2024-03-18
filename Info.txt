@@ -1,0 +1,15 @@
+section 4 ----- implemented dockers
+accounts --- dockerfile
+loans --- buildpacks
+cards----google jib
+
+section 6 , v1
+configurations 
+
+accounts --- @value, Environtment  , @ConfigurationProperties with prod and qa yml
+loans ----  @value, Environtment  , @ConfigurationProperties with prod and qa yml
+cards --- @value, Environtment  , @ConfigurationProperties with prod and qa yml
+
+
+section 6 , v2
+created new prject for config server 

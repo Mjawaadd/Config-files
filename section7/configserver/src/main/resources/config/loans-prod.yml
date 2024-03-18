@@ -1,0 +1,11 @@
+build:
+  version: "1.0"
+
+loans:
+  message: "welcome to icic bank  related API's"
+  contactDetails:
+    name: "Prod- Lead"
+    email: "prod@icici.com"
+  onCallSupport:
+    - (+91) 855585554
+    - (+91) 856341554
