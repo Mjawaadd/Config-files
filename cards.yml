@@ -2,7 +2,7 @@ build:
   version: "1.0"
      
 cards:
-  message: "Welcome to icici bank micro services"
+  message: "Welcome to icici bank  docker micro services"
   contactDetails:
     name: "Mohammed Jawaad"
     email: "mj@gmail.com"
