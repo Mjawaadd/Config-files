@@ -2,7 +2,7 @@ build:
   version: "1.0"
 
 accounts:
-  message: "welcome to icic bank related API's"
+  message: "welcome to icic bank production related API's"
   contactDetails:
     name: "Prod- Lead"
     email: "prod@icici.com"
