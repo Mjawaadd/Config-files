@@ -1,0 +1,39 @@
+services:
+  network_deploy_service:
+    networks:
+      - mjawaad
+      
+  microservice_db_config:
+    extends:
+      service: network_deploy_service
+    image: mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      timeout: 10s
+      retries: 10
+      interval: 10s
+      start_period: 10s
+    environment:
+      MYSQL_ROOT_PASSWORD: Testing@123
+  
+  microservice_base_config:
+    extends:
+      service: network_deploy_service
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    environment:
+      SPRING_RABBITMQ_HOST: "rabbit"
+          
+  microservice_configserver_config:
+    extends:
+      service: microservice_base_config
+    depends_on:
+      configserver:
+        condition: service_healthy
+    environment:
+      SPRING_PROFILES_ACTIVE: default
+      SPRING_CONFIG_IMPORT: configserver:http://configserver:8071/
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: Testing@123
